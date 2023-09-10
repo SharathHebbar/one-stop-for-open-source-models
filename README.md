@@ -1,2 +1,5 @@
 # One Stop For Open Source Models
-![SS](One-stop-for-Open-source-models\assets\screenshots\1.png)
+![SS](https://github.com/SharathHebbar/one-stop-for-open-source-models/blob/main/assets/screenshots/1.png)
+![SS](https://github.com/SharathHebbar/one-stop-for-open-source-models/blob/main/assets/screenshots/2.png)
+![SS](https://github.com/SharathHebbar/one-stop-for-open-source-models/blob/main/assets/screenshots/3.png)
+![SS](https://github.com/SharathHebbar/one-stop-for-open-source-models/blob/main/assets/screenshots/4.png)
