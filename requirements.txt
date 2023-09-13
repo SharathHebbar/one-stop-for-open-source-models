@@ -1,0 +1,6 @@
+langchain
+huggingface_hub
+Streamlit
+pypdf
+faiss-gpu
+faiss-cpu
