@@ -1,7 +1,7 @@
 # One Stop For Open Source Models
 
-## Beta3
-### Testing of Beta1 link: [Beta1](https://huggingface.co/spaces/Sharathhebbar24/One-stop-for-Open-source-models)
+## Beta2
+### Testing of Beta2 link: [Beta2](https://huggingface.co/spaces/Sharathhebbar24/One-stop-for-Open-source-models)
 
 <hr>
 
