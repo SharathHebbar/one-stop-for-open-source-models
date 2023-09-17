@@ -8,6 +8,7 @@ def return_models(task_name):
             'google',
             "facebook",
             "microsoft",
+            "salesforce",
             "langboat",
             "bloom",
             "allenai",
@@ -15,7 +16,8 @@ def return_models(task_name):
             "lmsys",
             "starmpcc",
             "haining",
-            "kaludi"
+            "kaludi",
+            
 
         )
     else:
@@ -23,6 +25,7 @@ def return_models(task_name):
             'google',
             "facebook",
             "microsoft",
+            "salesforce",
             "langboat",
             "databricks",
             "aisquared",
@@ -41,6 +44,8 @@ def return_models(task_name):
             "together_computer",
             "mosaic_ml",
             "h20ai",
+            "deciai",
+            
         )
     return models_parent
 
@@ -315,6 +320,7 @@ def return_text2text_generation_models(model_parent, count=False):
         "microsoft/xprophetnet-large-wiki100-cased-xglue-ntg",
         "microsoft/prophetnet-large-uncased-squad-qg",
         "microsoft/prophetnet-large-uncased-cnndm",
+        
     )
     starmpcc_models_list = (
         "starmpcc/Asclepius-13B",
@@ -418,6 +424,52 @@ def return_text2text_generation_models(model_parent, count=False):
         'allenai/led-base-16384'
     )
 
+    salesforce_models_list = (
+        'Salesforce/socratic-books-30M',
+        'Salesforce/instructcodet5p-16b',
+        'Salesforce/codet5p-2b',
+        'Salesforce/codet5p-6b',
+        'Salesforce/codet5p-16b',
+        'Salesforce/dialogstudio-t5-3b-v1.0',
+        'Salesforce/dialogstudio-t5-base-v1.0',
+        'Salesforce/dialogstudio-t5-large-v1.0',
+        'Salesforce/bart-large-xsum-samsum',
+        'Salesforce/cods-bart-large-xsum-samsum',
+        'Salesforce/qaconv-unifiedqa-t5-3b',
+        'Salesforce/qaconv-unifiedqa-t5-base',
+        'Salesforce/qaconv-unifiedqa-t5-large',
+        'Salesforce/mixqg-base',
+        'Salesforce/mixqg-3b',
+        'Salesforce/mixqg-large',
+        'Salesforce/codet5-small',
+        'Salesforce/codet5-base',
+        'Salesforce/codet5-large',
+        'Salesforce/codet5-large-ntp-py',
+        'Salesforce/codet5-base-multi-sum',
+        'Salesforce/discord_qg',
+        'Salesforce/codet5-base-codexglue-sum-python',
+        'Salesforce/codet5-base-codexglue-sum-go',
+        'Salesforce/codet5-base-codexglue-sum-php',
+        'Salesforce/codet5-base-codexglue-sum-javascript',
+        'Salesforce/codet5-base-codexglue-sum-java',
+        'Salesforce/codet5-base-codexglue-sum-ruby',
+        'Salesforce/codet5-base-codexglue-clone',
+        'Salesforce/codet5-base-codexglue-concode',
+        'Salesforce/codet5-base-codexglue-defect',
+        'Salesforce/codet5-base-codexglue-refine-medium',
+        'Salesforce/codet5-base-codexglue-refine-small',
+        'Salesforce/codet5-base-codexglue-translate-cs-java',
+        'Salesforce/codet5-base-codexglue-translate-java-cs',
+        'Salesforce/safety-flan-t5-base',
+        'Salesforce/safety-flan-t5-small',
+        'Salesforce/codet5p-770m-py',
+        'Salesforce/codet5p-770m',
+        'Salesforce/codet5p-220m',
+        'Salesforce/codet5p-220m-py',
+        'Salesforce/bart-large-swipe',
+        'Salesforce/bart-large-swipe-clean'
+    )
+
     model_dict = {
         "google": google_models_list,
         "mbzuai": mbzuai_models_list,
@@ -429,7 +481,8 @@ def return_text2text_generation_models(model_parent, count=False):
         "langboat": langboat_models_list,
         "haining": haining_models_list,
         "kaludi": kaludi_models_list,
-        "allenai": allenai_models_list
+        "allenai": allenai_models_list,
+        "salesforce": salesforce_models_list
         }
     if count is True:
         models_count = 0
@@ -799,6 +852,8 @@ def return_text_generation_models(model_parent, count=False):
         "microsoft/CodeGPT-small-py-adaptedGPT2",
         "microsoft/CodeGPT-small-java",
         "microsoft/CodeGPT-small-java-adaptedGPT2",
+        "microsoft/phi-1",
+        "microsoft/phi-1_5",
     )
     
     langboat_models_list = (
@@ -851,6 +906,38 @@ def return_text_generation_models(model_parent, count=False):
         'allenai/open-instruct-human-mix-65b'
         )
 
+    deciai_models_list = (
+        "Deci/DeciLM-6b",
+        "Deci/DeciLM-6b-instruct",
+        "Deci/DeciCoder-1b",
+    )
+
+    salesforce_models_list = (
+        'Salesforce/codegen25-7b-multi',
+        'Salesforce/xgen-7b-4k-base',
+        'Salesforce/xgen-7b-8k-inst',
+        'Salesforce/xgen-7b-8k-base',
+        'Salesforce/codegen25-7b-mono',
+        'Salesforce/codegen25-7b-instruct',
+        'Salesforce/ctrl',
+        'Salesforce/codegen2-16B',
+        'Salesforce/codegen2-7B',
+        'Salesforce/codegen2-3_7B',
+        'Salesforce/codegen2-1B',
+        'Salesforce/codegen-350M-mono',
+        'Salesforce/codegen-350M-multi',
+        'Salesforce/codegen-16B-nl',
+        'Salesforce/codegen-2B-mono',
+        'Salesforce/codegen-16B-multi',
+        'Salesforce/codegen-2B-multi',
+        'Salesforce/codegen-6B-nl',
+        'Salesforce/codegen-2B-nl',
+        'Salesforce/codegen-350M-nl',
+        'Salesforce/codegen-6B-multi',
+        'Salesforce/codegen-6B-mono',
+        'Salesforce/codegen-16B-mono'
+    )
+
     model_dict = {
         "google": google_models_list,
         "mbzuai": mbzuai_models_list,
@@ -872,7 +959,9 @@ def return_text_generation_models(model_parent, count=False):
         "facebook": facebook_models_list,
         "microsoft": microsoft_models_list,
         "langboat": langboat_models_list,
-        "allenai": allenai_models_list
+        "allenai": allenai_models_list,
+        "deciai": deciai_models_list,
+        "salesforce": salesforce_models_list
         }
     
     if count is True:
